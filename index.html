@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/295e07d276.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <div class="center">
+    <h1 class="header-gradient">Hi.</h1>
+
+    <body class="body-text">
+      I'm Kaylynn. I'm studying game design somewhere in the unfortunate land of
+      Australia and spend my free time doing development. <br />
+      I update this page whenever I think of something cool. At the moment I
+      haven't thought of anything.
+      <p>If you'd like to get in touch:</p>
+
+      <p>
+        <a class="link" href="https://twitter.com/KaylynnMorgan2">
+          <i class="fab hover-gradient fa-twitter"></i>
+        </a>
+        <a class="link" href="https://github.com/Kaylynn234">
+          <i class="fab hover-gradient fa-github"></i>
+        </a>
+        <a class="link" href="mailto:mkaylynn7@gmail.com">
+          <i class="fas hover-gradient fa-at"></i>
+        </a>
+        <a class="link" href="https://www.instagram.com/synapse_overload/">
+          <i class="fas hover-gradient fa-hashtag"></i>
+        </a>
+      </p>
+
+      You can also find me on discord at <u>Kaylynn#0001</u>.
+    </body>
+  </div>
+
+  <div class="footer">
+    • <a onclick="removeStyles()">Abandon hope, all ye who enter here</a> •
+  </div>
+
+  <script>
+    function removeStyles() {
+      document.querySelectorAll('link[rel="stylesheet"]')
+        .forEach(el => el.parentNode.removeChild(el));
+      
+        document.head.insertAdjacentHTML("beforeend", '<link rel="stylesheet" href="ooer.css" />')
+    }
+  </script>
+</html>
