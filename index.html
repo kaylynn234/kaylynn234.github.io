@@ -14,12 +14,18 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </head>
 
   <div class="center">
     <h1 class="header-gradient">Hi.</h1>
 
-    <body class="body-text">
+    <body>
       I'm Kaylynn. I'm studying game design somewhere in the unfortunate land of
       Australia and spend my free time doing development. <br />
       I update this page whenever I think of something cool. At the moment I
@@ -27,34 +33,71 @@
       <p>If you'd like to get in touch:</p>
 
       <p>
-        <a class="link" href="https://twitter.com/KaylynnMorgan2">
+        <a class="spooky-link" href="https://twitter.com/KaylynnMorgan2">
           <i class="fab hover-gradient fa-twitter"></i>
         </a>
-        <a class="link" href="https://github.com/Kaylynn234">
+        <a class="spooky-link" href="https://github.com/Kaylynn234">
           <i class="fab hover-gradient fa-github"></i>
         </a>
-        <a class="link" href="mailto:mkaylynn7@gmail.com">
+        <a class="spooky-link" href="mailto:mkaylynn7@gmail.com">
           <i class="fas hover-gradient fa-at"></i>
         </a>
-        <a class="link" href="https://www.instagram.com/synapse_overload/">
+        <a
+          class="spooky-link"
+          href="https://www.instagram.com/synapse_overload/"
+        >
           <i class="fas hover-gradient fa-hashtag"></i>
         </a>
       </p>
 
       You can also find me on discord at <u>Kaylynn#0001</u>.
     </body>
+
+    <h3>Projects</h3>
+
+    <body>
+      I do a whole bunch of stuff - most of which can be found on my GitHub
+      account. <br />
+      Since you're here, here's a curated list.
+    </body>
+
+    <div class="project-card-container">
+      <div class="project-card">
+        <h3>Horror</h3>
+        <div class="project-card-inner">
+          Horror is a Python codec that allows you to write and call inline ASM
+          in Python. It's as terrifying as it sounds.
+          <br />
+          <br />
+          <details>
+            <summary>See snippet</summary>
+            <br>
+            <script src="https://gist.github.com/kaylynn234/f0e96036060824055681f3eba86922ff.js"></script>
+          </details>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Nhentaio</h3>
+        <div class="project-card-inner">
+          An asynchronous, read-only nhentai API wrapper for the damned, depraved, and disillusioned.
+        </div>
+      </div>
+    </div>
   </div>
 
+  <!-- This is not the right way to do this but I really do not care. -->
+  <br /><br /><br />
+
   <div class="footer">
-    • <a onclick="removeStyles()">Abandon hope, all ye who enter here</a> •
+    • <a onclick="ooerize()">Abandon hope, all ye who enter here</a> •
   </div>
 
   <script>
-    function removeStyles() {
-      document.querySelectorAll('link[rel="stylesheet"]')
-        .forEach(el => el.parentNode.removeChild(el));
-      
-        document.head.insertAdjacentHTML("beforeend", '<link rel="stylesheet" href="ooer.css" />')
+    function ooerize() {
+      document.head.insertAdjacentHTML(
+        "beforeend",
+        '<link rel="stylesheet" href="ooer.css" />'
+      );
     }
   </script>
 </html>
